@@ -1,0 +1,173 @@
+<mxfile host="app.diagrams.net" modified="2024-03-17T19:50:07.893Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="24.0.7" etag="xbuB6dk2OnpT4-_Uedk3" type="device">
+  <diagram id="SMtoBMfS0xex6sFJw2kW" name="Page-1">
+    <mxGraphModel dx="3695" dy="2677" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-14" value="package" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#B9E0A5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-1040" width="660" height="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-10" value="package" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="-480" width="1040" height="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-6" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="-1040" width="990" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="node10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;BinaryOperation&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ execute(Polynomial, Polynomial): Polynomial&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="540" width="290" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="node8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CalculatorUI&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ CalculatorUI(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- secondPolynomial: String&lt;br/&gt;- additionButton1: JButton&lt;br/&gt;- key0Button: JButton&lt;br/&gt;- xButton2: JButton&lt;br/&gt;- multiplyButton: JButton&lt;br/&gt;- powButton2: JButton&lt;br/&gt;- digitsButtonsPanel: JPanel&lt;br/&gt;- firstPolynomial: String&lt;br/&gt;- panelBackground: JPanel&lt;br/&gt;- divisionButton: JButton&lt;br/&gt;- subtractionButton2: JButton&lt;br/&gt;- titlePanel: JPanel&lt;br/&gt;- firstPolynomialLabel: JLabel&lt;br/&gt;- minusButton: JButton&lt;br/&gt;- plusButton: JButton&lt;br/&gt;- deleteButton: JButton&lt;br/&gt;- stringConversionToPolynomial1: StringConversionToPolynomial&lt;br/&gt;- derivativeButton: JButton&lt;br/&gt;- secondPolynomialTextField: JTextField&lt;br/&gt;- multiplicationButton3: JButton&lt;br/&gt;- operationsPanel: JPanel&lt;br/&gt;- key1Button: JButton&lt;br/&gt;- key2Button: JButton&lt;br/&gt;- remainderLabel: JLabel&lt;br/&gt;- calculatorTitle: JLabel&lt;br/&gt;- operation: Operations&lt;br/&gt;- key5Button: JButton&lt;br/&gt;- key9Button: JButton&lt;br/&gt;- firstPolynomialTextField: JTextField&lt;br/&gt;- resultTextField: JTextField&lt;br/&gt;- key7Button: JButton&lt;br/&gt;- inputsPanel: JPanel&lt;br/&gt;- lastFocusedTextField: JTextField&lt;br/&gt;- remainderTextField: JTextField&lt;br/&gt;- integralButton: JButton&lt;br/&gt;- key6Button: JButton&lt;br/&gt;- secondPolynomialLabel: JLabel&lt;br/&gt;- commaButton: JButton&lt;br/&gt;- key3Button: JButton&lt;br/&gt;- key8Button: JButton&lt;br/&gt;- resultLabel: JLabel&lt;br/&gt;- key4Button: JButton&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- addActionListenerToDigitButton(JButton, char): void&lt;br/&gt;- setupVariableButton(): void&lt;br/&gt;- setupOperationListeners(): void&lt;br/&gt;- setVisibilityForUnaryOperationsOtherThanDivision(): void&lt;br/&gt;+ containsOnlyOneVariable(String): boolean&lt;br/&gt;- performUnaryOperation(UnaryOperation, boolean): void&lt;br/&gt;+ main(String[]): void&lt;br/&gt;- initializeUI(): void&lt;br/&gt;- setupFocusListeners(): void&lt;br/&gt;- createFocusListener(JTextField): FocusListener&lt;br/&gt;- setupSignsButtonListeners(): void&lt;br/&gt;- setupDigitButtonListeners(): void&lt;br/&gt;- performDivision(): void&lt;br/&gt;- setVisibilityForDivision(): void&lt;br/&gt;- performBinaryOperation(BinaryOperation): void&lt;br/&gt;- setupDeleteButton(): void&lt;br/&gt;+ validateInput(JTextField): boolean&lt;br/&gt;- addActionListenerToSignButton(JButton, char): void&lt;br/&gt;- setVisibilityForBinaryOperations(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="-1000" width="552" height="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="node7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Monomial&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Monomial(Integer, Number): &lt;br/&gt;+ Monomial(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- degree: Integer&lt;br/&gt;- coefficient: Number&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ equals(Object): boolean&lt;br/&gt;+ setCoefficient(Number): void&lt;br/&gt;+ hashCode(): int&lt;br/&gt;+ setDegree(Integer): void&lt;br/&gt;+ toString(): String&lt;br/&gt;+ compareTo(Monomial): int&lt;br/&gt;+ getDegree(): Integer&lt;br/&gt;+ getCoefficient(): Number&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-440" y="-960" width="283" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;OperationType&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ OperationType(): &lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ IMPOSSIBLE_DIVISION:+ DIVISION_BY_ZERO:+&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&amp;nbsp;SUBTRACTION:+ DERIVATIVE:+ INTEGRATION:+ DIVISION:+&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;ADDITION + MULTIPLICATION: &lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="490" width="420" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="node6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Operations&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Operations(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ subtractPolynomial(Polynomial, Polynomial): Polynomial&lt;br/&gt;+ derivativePolynomial(Polynomial): Polynomial&lt;br/&gt;- computeQuotient(Polynomial, Polynomial): Map&amp;lt;Integer, Monomial&amp;gt;&lt;br/&gt;- addMonomialsToResult(Map&amp;lt;Integer, Monomial&amp;gt;, Map&amp;lt;Integer, Monomial&amp;gt;): void&lt;br/&gt;- createPolynomial(Map&amp;lt;Integer, Monomial&amp;gt;): Polynomial&lt;br/&gt;+ integratePolynomial(Polynomial): Polynomial&lt;br/&gt;- computeRemainder(Polynomial, Polynomial, Map&amp;lt;Integer, Monomial&amp;gt;): Polynomial&lt;br/&gt;+ addPolynomial(Polynomial, Polynomial): Polynomial&lt;br/&gt;+ multiplyPolynomial(Polynomial, Polynomial): Polynomial&lt;br/&gt;- subtractMonomialsFromResult(Map&amp;lt;Integer, Monomial&amp;gt;, Map&amp;lt;Integer, Monomial&amp;gt;): void&lt;br/&gt;+ dividePolynomial(Polynomial, Polynomial): ArrayList&amp;lt;Polynomial&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-449.5" y="-414" width="650" height="344" as="geometry" />
+        </mxCell>
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Polynomial&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Polynomial(): &lt;br/&gt;+ Polynomial(Map&amp;lt;Integer, Monomial&amp;gt;): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- monomials: Map&amp;lt;Integer, Monomial&amp;gt;&lt;br/&gt;+ VARIABLE_OF_THE_POLYNOMIAL: Character&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ setMonomials(Map&amp;lt;Integer, Monomial&amp;gt;): void&lt;br/&gt;+ getMonomials(): Map&amp;lt;Integer, Monomial&amp;gt;&lt;br/&gt;+ prettyPrint(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="41.5" y="-960" width="416" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="node5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;PolynomialProvider&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ createPolynomial(OperationType): List&amp;lt;Polynomial[]&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-449.5" y="565" width="475" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="node2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PolynomialProviderImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ PolynomialProviderImpl(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;~ stringConversionToPolynomial: StringConversionToPolynomial&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- createTestCaseForBinaryOperation(Polynomial, Polynomial, Polynomial): Polynomial[]&lt;br/&gt;- createTestCaseForDivision(Polynomial, Polynomial, Polynomial, Polynomial): Polynomial[]&lt;br/&gt;+ createPolynomial(OperationType): List&amp;lt;Polynomial[]&amp;gt;&lt;br/&gt;+ providePolynomialFromString(OperationType): List&amp;lt;Polynomial[]&amp;gt;&lt;br/&gt;- createPolynomialFromString(String): Polynomial&lt;br/&gt;- createTestCaseForUnaryOperation(Polynomial, Polynomial): Polynomial[]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-449.5" y="220" width="636" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="node4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StringConversionToPolynomial&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ StringConversionToPolynomial(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ makeStringAPolynomial(String): Polynomial&lt;br/&gt;- handleCoefficient(String): Number&lt;br/&gt;- handleDegree(String): int&lt;br/&gt;- handleFreeTerm(String): Number&lt;br/&gt;- createPolynomial(Map&amp;lt;Integer, Monomial&amp;gt;): Polynomial&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-449.5" y="-30" width="491" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="node9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;UnaryOperation&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ execute(Polynomial): Polynomial&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="540" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="edge16" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=circlePlus;startFill=0;endArrow=none;strokeColor=#820000;entryX=0.704;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="node8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1088.6444927536231" y="540" as="sourcePoint" />
+            <mxPoint x="1049.998" y="503" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="19" />
+              <mxPoint x="70" y="20" />
+            </Array>
+            <mxPoint x="699" y="20" as="sourcePoint" />
+            <mxPoint x="40" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge13" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;exitX=0.227;exitY=0.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="node6" target="node7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-302" y="-414" />
+              <mxPoint x="-298" y="-414" />
+              <mxPoint x="-298" y="-492" />
+            </Array>
+            <mxPoint x="-200" y="-414" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.917;exitY=-0.001;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="node6" target="node0" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="144" y="-414" />
+              <mxPoint x="144" y="-690" />
+              <mxPoint x="145" y="-690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=1;exitY=0.455;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="node2" target="node0" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="187" y="348" />
+              <mxPoint x="594" y="348" />
+              <mxPoint x="594" y="-830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge0" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.372;exitY=1.015;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="node2" target="node5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="node4" target="node7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-470" y="67" />
+              <mxPoint x="-470" y="-490" />
+              <mxPoint x="-370" y="-490" />
+              <mxPoint x="-370" y="-530" />
+              <mxPoint x="-369" y="-530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge15" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=circlePlus;startFill=0;endArrow=none;strokeColor=#820000;exitX=0.526;exitY=0.028;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.237;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="node9" target="node8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="831" y="520" />
+              <mxPoint x="831" y="520" />
+            </Array>
+            <mxPoint x="862" y="560" as="sourcePoint" />
+            <mxPoint x="860" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;model&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="-1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-11" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;controller&lt;/font&gt;&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="-460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;view&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-16" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.323;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="node2" target="node4">
+          <mxGeometry x="-1" y="-11" relative="1" as="geometry">
+            <mxPoint x="80" y="240" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-18" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.494;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.638;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="node2" target="node4">
+          <mxGeometry x="0.0157" y="-26" width="160" relative="1" as="geometry">
+            <mxPoint x="-170" y="200" as="sourcePoint" />
+            <mxPoint x="-10" y="200" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-21" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=-0.002;exitY=0.465;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.003;entryY=0.534;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="F2ooD-XHVH-QgR9ZjP8r-14" target="node6">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="320" y="-90" as="sourcePoint" />
+            <mxPoint x="160" y="-90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-22" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.003;exitY=0.643;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.997;entryY=0.563;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="F2ooD-XHVH-QgR9ZjP8r-14" target="node4">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="500" y="80" as="sourcePoint" />
+            <mxPoint x="53" y="81" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-25" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.998;exitY=0.152;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.648;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="node4" target="node0">
+          <mxGeometry x="-0.1198" y="-88" width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="-180" as="sourcePoint" />
+            <mxPoint x="490" y="-180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="311" />
+              <mxPoint x="310" y="-600" />
+              <mxPoint x="310" y="-650" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F2ooD-XHVH-QgR9ZjP8r-26" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.004;exitY=0.46;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="node0">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="3" y="-840" as="sourcePoint" />
+            <mxPoint x="-157" y="-840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
