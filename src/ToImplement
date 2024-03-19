@@ -1,5 +1,4 @@
---more test cases
---unit test for toString ----> make it prettyPrint
---sort in the JTextField to compare initial string with the polynomial obtained after the conversion in the StringConversion class
-        --possible issues -it uses the same function, even if the input is bad it will pass the test?
-        --maybe use a LinkedHashMap and compare the string afterwards, also keep the TreeMap
+--future developement ideas:
+        ->history
+        ->step by step calculation guide
+        ->variable picker
